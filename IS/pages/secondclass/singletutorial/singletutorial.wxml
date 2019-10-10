@@ -1,0 +1,34 @@
+<i-panel title="{{res.list.title}}">
+    <view style="padding: 15px;">
+      <view class="small">发布时间：{{res.list.time}}</view>
+      <text>{{res.list.txtcontent}}</text>
+      <view class="divLine"></view>
+      <view class="small">也可访问工学部综合系统网站阅读！</view>
+      <view class="small"><view  bindtap='copyText' data-text="{{contents}}">点我复制地址</view></view>
+    </view>
+    
+</i-panel>
+
+<i-panel title="报名{{res.list.title}}">
+    <view style="padding: 15px;">
+      <form bindsubmit="formSubmit">
+
+      <i-input name="name" right title="姓名" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <i-input name="myid" right title="学号" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{classes}}" range-key="{{'name'}}">
+        <view class="picker">
+          <i-input name="select" value="{{show}}" right title="点击选择" mode="wrapped"/>
+        </view>
+      </picker>
+      <i-radio value="{{res.list.title}}" checked="true"></i-radio>
+      <button formType="submit">报名</button>
+
+    </form>
+    <view wx:if="{{isEmpty}}">
+        <i-load-more tip="{{warn}}" loading="{{false}}" />
+    </view>
+    <view wx:else="{{isEmpty}}">
+        <i-load-more tip="提交之后若需要更改请联系管理员" loading="{{false}}" />
+    </view>
+    </view>
+</i-panel>

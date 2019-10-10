@@ -1,0 +1,20 @@
+<i-panel>
+    <form bindsubmit="formSubmit">
+
+      <i-input name="name" right title="姓名" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <i-input name="myid" right title="学号" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{classes}}" range-key="{{'name'}}">
+        <view class="picker">
+          <i-input name="classes" value="{{show}}" right title="点击选择" mode="wrapped" />
+        </view>
+      </picker>
+      <button formType="submit">登录</button>
+
+    </form>
+    <view wx:if="{{isEmpty}}">
+        <i-load-more tip="{{warn}}" loading="{{false}}" />
+    </view>
+    <view wx:else="{{isEmpty}}">
+        <i-load-more tip="若登录有问题请联系管理员" loading="{{false}}" />
+    </view>
+</i-panel>

@@ -1,0 +1,28 @@
+<i-card title="{{res[0].name}}" thumb="http://serv.huihuagongxue.top/IS/public{{res[0].imgimage}}">
+  <view slot="content">讲师：{{res[0].myname}}</view>
+  <view slot="content">课程大纲请访问工学部综合系统网站阅读！</view>
+  <view slot="content"><view  bindtap='copyText' data-text="{{contents}}">点我复制地址</view></view>
+  <view slot="footer">{{res[0].description}}</view>
+</i-card>
+
+<i-panel title="报名{{res[0].name}}">
+    <form bindsubmit="formSubmit">
+
+      <i-input name="name" right title="姓名" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <i-input name="myid" right title="学号" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{classes}}" range-key="{{'name'}}">
+        <view class="picker">
+          <i-input value="{{show}}" right title="点击选择" mode="wrapped" />
+        </view>
+      </picker>
+      <i-radio value="{{res[0].name}}" checked="true"></i-radio>
+      <button formType="submit">报名</button>
+
+    </form>
+    <view wx:if="{{isEmpty}}">
+        <i-load-more tip="{{warn}}" loading="{{false}}" />
+    </view>
+    <view wx:else="{{isEmpty}}">
+        <i-load-more tip="提交之后若需要更改请联系管理员" loading="{{false}}" />
+    </view>
+</i-panel>

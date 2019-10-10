@@ -1,0 +1,83 @@
+<view>
+  <i-panel>
+    <view>
+      <i-grid>
+        
+        <navigator url="./course/course">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="computer_fill" size='30' color="#1498d9"/>
+            </i-grid-icon>
+            <i-grid-label>新课程</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator url="./lecture/lecture">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="group" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>讲师列表</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator url="./tutorial/tutorial">
+          <i-grid-item>
+            <i-grid-icon>
+             <i-icon slot="icon" type="group_fill" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>微课堂报名</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator url="./search/search">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="search" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>查询报名情况</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+      </i-grid>
+
+    </view>
+
+    <i-panel title="为什么选择第二课堂">
+    <view>
+
+      <i-cell-group >
+        <i-cell title="丰富你的知识" label="10大流行编程语言">
+          <i-icon slot="icon" type="barrage_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="和学长学姐交流" label="10位同辈讲师">
+          <i-icon slot="icon" type="brush_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="运用到实际" label="100%运用到实际" >
+          <i-icon slot="icon" type="clock_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="时下前沿技术" label="2019最新技术" >
+          <i-icon slot="icon" type="document_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="学部老师的支持" label="2位主管老师" >
+          <i-icon slot="icon" type="praise_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+    </view>
+  </i-panel>
+
+  </i-panel>
+</view>

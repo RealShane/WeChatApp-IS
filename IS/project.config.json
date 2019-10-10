@@ -1,0 +1,82 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx6c3d90398e1ae7b4",
+	"projectname": "%E5%B7%A5%E5%AD%A6%E9%83%A8%E7%BB%BC%E5%90%88%E7%B3%BB%E7%BB%9F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "主页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "第二课堂",
+					"pathName": "pages/secondclass/secondclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择课程",
+					"pathName": "pages/secondclass/course/course",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "综合测评",
+					"pathName": "pages/origin/origin",
+					"scene": null
+				}
+			]
+		}
+	}
+}

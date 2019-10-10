@@ -1,0 +1,10 @@
+<view wx:for='{{res}}' wx:key="res" wx:for-item="itme">
+  <navigator url="./../singlecourse/singlecourse?id={{itme.id}}">
+    <i-card title="{{itme.name}}" thumb="http://serv.huihuagongxue.top/IS/public{{itme.imgimage}}">
+      <view slot="content">讲师：{{itme.myname}}</view>
+      <view slot="content">上课地点：{{itme.location}}</view>
+      <view slot="content">时间：{{itme.timetogo}}"</view>
+      <view slot="footer">{{itme.description}}</view>
+    </i-card>
+  </navigator>
+</view>

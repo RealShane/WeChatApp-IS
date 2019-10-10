@@ -1,0 +1,44 @@
+<!-- 新 -->
+<block wx:if="{{isNew}}">
+  <i-card title="{{res[0].name}}" thumb="./img/bw.png">
+  <view slot="content">讲师：{{res[0].myname}}</view>
+  <view slot="content">竞选宣言：{{res[0].scripthood}}</view>
+  <view slot="footer">{{res[0].message}}</view>
+</i-card>
+ <i-panel title="给{{res[0].name}}投票">
+    <form bindsubmit="formSubmit">
+      <button formType="submit">打分</button>
+    </form>
+    <view wx:if="{{isEmpty}}">
+        <i-load-more tip="{{warn}}" loading="{{false}}" />
+    </view>
+    <view wx:else="{{isEmpty}}">
+        <i-load-more tip="提交之后若需要更改请联系管理员" loading="{{false}}" />
+    </view>
+</i-panel>
+</block>
+<!-- /新 -->
+<!-- 旧 -->
+<block wx:else>
+  <i-card title="{{res[0].name}}" thumb="./img/bw.png">
+  <view slot="content">讲师：{{res[0].myname}}</view>
+  <view slot="content">工作总结：{{res[0].scripthood}}</view>
+  <view slot="footer">{{res[0].message}}</view>
+</i-card>
+ <i-panel title="给{{res[0].name}}打分">
+    <form bindsubmit="formSubmit">
+
+      <i-input name="mark" right title="请打分" type="textarea" mode="wrapped" placeholder="请输入..." />
+      <button formType="submit">打分</button>
+
+    </form>
+    <view wx:if="{{isEmpty}}">
+        <i-load-more tip="{{warn}}" loading="{{false}}" />
+    </view>
+    <view wx:else="{{isEmpty}}">
+        <i-load-more tip="提交之后若需要更改请联系管理员" loading="{{false}}" />
+    </view>
+</i-panel>
+
+</block>
+<!-- /旧 -->

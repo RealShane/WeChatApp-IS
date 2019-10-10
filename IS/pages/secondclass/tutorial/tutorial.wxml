@@ -1,0 +1,5 @@
+<view wx:for='{{res}}' wx:key="res" wx:for-item="itme">
+  <i-cell-group>
+    <i-cell title="{{itme.title}}" is-link url="./../singletutorial/singletutorial?id={{itme.id}}"></i-cell>
+  </i-cell-group>
+</view>

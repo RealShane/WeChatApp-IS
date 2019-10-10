@@ -1,0 +1,145 @@
+<view>
+<!-- 抽屉 -->
+<i-drawer mode="left" visible="{{showLeft1}}" bind:close="toggleLeft1">
+    <view class="demo-container">
+        <i-cell-group>
+        <i-cell title="第二课堂" label="丰富你的知识" is-link url="../secondclass/secondclass">
+          <i-icon slot="icon" type="live_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="综合测评" label="简化的体验" is-link url="../origin/origin">
+          <i-icon slot="icon" type="businesscard_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="时光信箱" label="写给自己的一封信" is-link url="">
+          <i-icon slot="icon" type="mail_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="自律委查勤系统" label="查就完事了XD" is-link url="">
+          <i-icon slot="icon" type="mine_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="论坛" label="逛一逛解决问题" is-link url="">
+          <i-icon slot="icon" type="collection_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="预约维修" label="电脑小分队预约" is-link url="">
+          <i-icon slot="icon" type="tasklist_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="关于我们" label="极客联盟" is-link url="">
+          <i-icon slot="icon" type="emoji_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+    </view>
+</i-drawer>
+<!--/抽屉 -->
+ <view>
+  <i-button bind:click="toggleLeft1" type="ghost">
+        <i-icon size='24' type="other" />点我啊XD！
+  </i-button>
+  <i-panel title="综合系统">
+    <view class='panel-p10'>
+
+      <i-cell-group>
+        <i-cell title="第二课堂" label="丰富你的知识" is-link url="../secondclass/secondclass">
+          <i-icon slot="icon" type="live_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="综合测评" label="简化的体验" is-link url="../origin/origin">
+          <i-icon slot="icon" type="businesscard_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="时光信箱" label="写给自己的一封信" is-link url="">
+          <i-icon slot="icon" type="mail_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+    </view>
+  </i-panel>
+
+  <i-panel title="常用功能">
+    <view class='panel-p10'>
+      <i-grid>
+
+        <i-grid-item bindtap="personList">
+          <i-grid-icon>
+            <i-icon slot="icon" type="computer_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>新课程</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item bindtap="report">
+          <i-grid-icon>
+            <i-icon slot="icon" type="integral_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>综合测评</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item bindtap="goDayLog">
+          <i-grid-icon>
+            <i-icon slot="icon" type="message_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>公开信</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item bindtap="gotoDeposit">
+          <i-grid-icon>
+            <i-icon slot="icon" type="mine_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>自律委查勤</i-grid-label>
+        </i-grid-item>
+
+      </i-grid>
+          
+      <i-grid>
+
+        <i-grid-item bindtap="residentList">
+          <i-grid-icon>
+            <i-icon slot="icon" type="group_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>微课堂报名</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item  bindtap="goInfo">
+          <i-grid-icon>
+            <i-icon slot="icon" type="addressbook_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>贫困生报名</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item data-type="0" bindtap='registerLog'>
+          <i-grid-icon>
+            <i-icon slot="icon" type="message_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>写时光信件</i-grid-label>
+        </i-grid-item>
+
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon slot="icon" type="collection_fill" size='30' color="#1498d9" />
+          </i-grid-icon>
+          <i-grid-label>论坛</i-grid-label>
+        </i-grid-item>
+
+      </i-grid>
+    </view>
+   </i-panel>
+  </view>
+</view>

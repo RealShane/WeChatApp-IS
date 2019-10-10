@@ -1,0 +1,89 @@
+<view>
+  <i-panel title="欢迎你：{{name}}">
+    <view>
+      <i-grid>
+        <button bindtap="quit">退出登录</button>
+        <navigator>
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="businesscard_fill" size='30' color="#1498d9"/>
+            </i-grid-icon>
+            <i-grid-label>综合测评</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator url="">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="addressbook_fill" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>贫困生报名</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator>
+          <i-grid-item>
+            <i-grid-icon>
+             <i-icon slot="icon" type="addressbook" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>贫困生测评</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+        <navigator url="./bw/bw">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon slot="icon" type="task_fill" size='30' color="#1498d9" />
+            </i-grid-icon>
+            <i-grid-label>班委测评</i-grid-label>
+          </i-grid-item>
+        </navigator>
+
+      </i-grid>
+
+    </view>
+
+    <i-panel title="为什么要进行综合测评">
+    <view>
+
+      <i-cell-group >
+        <i-cell title="活动加分" label="积极参加活动">
+          <i-icon slot="icon" type="activity" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="比赛加分" label="参加比赛拿奖">
+          <i-icon slot="icon" type="flag_fill" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="自律委加分" label="学生组织加分" >
+          <i-icon slot="icon" type="group" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="学生会加分" label="学生组织加分" >
+          <i-icon slot="icon" type="group" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="团总支加分" label="学生组织加分" >
+          <i-icon slot="icon" type="group" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+      <i-cell-group>
+        <i-cell title="青协加分" label="学生组织加分" >
+          <i-icon slot="icon" type="group" size='36' color="#1498d9" />
+        </i-cell>
+      </i-cell-group>
+
+    </view>
+  </i-panel>
+
+  </i-panel>
+</view>

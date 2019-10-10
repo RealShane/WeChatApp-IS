@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+
+    "pages/secondclass/secondclass",
+    "pages/secondclass/course/course",
+    "pages/secondclass/singlecourse/singlecourse",
+    "pages/secondclass/singletutorial/singletutorial",
+    "pages/secondclass/lecture/lecture",
+    "pages/secondclass/tutorial/tutorial",
+    "pages/secondclass/search/search",
+    
+    "pages/origin/origin",
+    "pages/origin/bw/bw",
+    "pages/origin/originLogin/originLogin",
+    "pages/origin/scorebw/scorebw"
+  ],
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#5ddfa1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/choseindex.png",
+        "text": "综合系统"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/choseperson.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fee81d",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "i-input": "iview/input/index",
+    "i-card": "iview/card/index",
+    "i-row": "iview/row/index",
+    "i-col": "iview/col/index",
+    "i-icon": "iview/icon/index",
+    "i-panel": "iview/panel/index",
+    "i-cell-group": "iview/cell-group/index",
+    "i-cell": "iview/cell/index",
+    "i-grid": "iview/grid/index",
+    "i-grid-item": "iview/grid-item/index",
+    "i-grid-icon": "iview/grid-icon/index",
+    "i-grid-label": "iview/grid-label/index",
+    "i-radio-group": "iview/radio-group/index",
+    "i-radio": "iview/radio/index",
+    "i-load-more": "iview/load-more/index",
+    "i-drawer": "iview/drawer/index",
+    "i-button": "iview/button/index",
+    "i-collapse": "iview/collapse/index",
+    "i-collapse-item": "iview/collapse-item/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

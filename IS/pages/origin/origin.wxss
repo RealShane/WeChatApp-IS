@@ -1,0 +1,10 @@
+page{
+  background: #fff;
+}
+button {
+    width: 80%;
+    margin-top: 20rpx;
+    background-color:red;
+    color: white;
+    border-radius: 98rpx; 
+}
